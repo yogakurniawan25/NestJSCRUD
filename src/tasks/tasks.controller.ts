@@ -20,8 +20,7 @@ export class TasksController {
         if(Object.keys(filterDto).length){
             return this.tasksService.getTaskWithFilter(filterDto);
         }else{
-            // return this.tasksService.getAllTask();
-            return ;
+            return this.tasksService.getAllTask();
         }
     }
 
